@@ -1,0 +1,34 @@
+{
+  "/getData": {
+    "target": "http://25.76.230.199:62328/front/main",
+    "secure": false,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "/getData": ""},
+    "changeOrigin": false
+  },
+  "/kickAll": {
+    "target": "http://25.76.230.199:62328/front/main",
+    "secure": false,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "/kickAll": ""},
+    "changeOrigin": false
+  },
+  "/postCommand": {
+    "target": "http://25.76.230.199:62328/front/command",
+    "secure": false,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "/postCommand": ""},
+    "changeOrigin": false
+  },
+  "/deleteBot": {
+    "target": "http://25.76.230.199:62328/front/kick",
+    "secure": false,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "/deleteBot": ""},
+    "changeOrigin": false
+  }
+}

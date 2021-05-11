@@ -1,0 +1,31 @@
+.bottext{
+  //word-spacing: 150px;
+  font-size: medium;
+  color: black;
+  //margin: auto;
+  background-color: lightgrey;
+  margin: 10px;
+  opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+  transition: 1s; /*Скорость перехода состояния элемента*/
+  animation: show 3s 1; /* Указываем название анимации, её время и количество повторов*/
+  animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+  animation-delay: 1s; /* Задержка перед началом */
+}
+.id address output{
+  display: inline-block;
+  margin-right: 120px;
+  width: 70px;
+  text-align: center;
+
+}
+@keyframes show{
+  0%{
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+#empty{
+  height: 65px;
+}
