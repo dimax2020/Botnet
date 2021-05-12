@@ -1,0 +1,9 @@
+<!--<p>response works!</p>-->
+<mat-card class = "bottext" *ngFor="let bots of dataService.data?.bots" >
+  <mat-card-content>
+    <div class="id">Id: {{bots?.id}}</div>
+    <div class="address">Address: {{bots?.address}}</div>
+    <div class="output">Output: {{bots?.commandOutput}}</div>
+  </mat-card-content>
+</mat-card>
+<div id="empty">&nbsp;</div>

@@ -1,0 +1,24 @@
+<mat-card class="command" *ngFor="let command of commands">
+  <mat-card-content>
+    <div class="textcommand">{{command.command}}:</div>
+    <form *ngIf="command.command == 'DDos'" class="FormItems" [formGroup]="myFirstReactiveForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="standard">
+      <mat-label>IP Address</mat-label>
+      <input formControlName="option" matInput placeholder="Placeholder">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>Enter the IP address</mat-hint>
+      <button mat-raised-button type="submit" class="run" (click)="addCommandToJson(command)">
+        Run command</button>
+    </mat-form-field></form>
+    <form *ngIf="command.command == 'BashCommand'" class="FormItems" [formGroup]="myFirstReactiveForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="standard">
+      <mat-label>Bash</mat-label>
+      <input formControlName="option"  matInput placeholder="Placeholder">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>Enter the bash</mat-hint>
+      <button mat-raised-button type="submit" class="run" (click)="addCommandToJson(command)">
+
+        Run command</button>
+    </mat-form-field></form>
+  </mat-card-content>
+</mat-card>

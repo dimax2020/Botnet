@@ -1,0 +1,18 @@
+.font{
+  text-align: center;
+  margin-top: 15px;
+  font-size: 40px;
+  color: orange;
+  text-shadow: #cad5e2 1px 1px 0, #cad5e2 3px 3px 0, #cad5e2 5px 5px 0;
+}
+.button{
+  justify-content: center;
+  margin-top: 100px;
+  width: 500px;
+  height: auto;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-color: cornflowerblue;
+  color: cornflowerblue;
+}
